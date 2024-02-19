@@ -35,9 +35,7 @@ app.get("/",(req,res)=>{
     res.render("index");
 })
 app.get("/login",function(req,res){
-
     res.render("logIn");
-
 })
 
 app.post("/login",async function(req,res){
