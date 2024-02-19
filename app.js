@@ -40,6 +40,14 @@ app.get("/login",function(req,res){
 
 })
 
+app.post("/login",async function(req,res){
+    let number =req.body.number;
+    const name = req.body.name;
+
+    console.log('details : ',number ,name);
+    res.redirect("/");
+});
+
 app.listen(8000, function(){
     console.log("App is running on Port 8000");
 });

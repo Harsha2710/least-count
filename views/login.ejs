@@ -1,40 +1,88 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <title>Home</title>
-            <style>
-                body{
-                    position:absolute;
-                    padding-top:100px;
-                    padding-left:200px;
-                    font-family:'Times New Roman', Times, serif;
-                    background-image: url("../img/bg.gif");
-                    background-repeat:no-repeat;
-                    background-size:cover;
-                }
-                h2{
-                    text-align: center;
-                    text-decoration: solid;
-                    text-shadow: 5px solid white;
-                    color:black;
-                    font-size:xx-large;
-                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                }
-                button{
-                    background-color:rgb(161, 172, 177);
-                    padding:20px 100px 20px 100px;
-                    position:relative;
-                    transition-duration: 0.4s;
-                    font-family:Verdana, Geneva, Tahoma, sans-serif;
-                    font-size:large;
-                }
-                button:hover {
-                    background-color:rgb(12, 12, 12);
-                    color: white;
-                }
-            </style>
-        </head>
-        <body>
-            <h2>WELCOME TO SHARK TANK</h2>
-        </body>
-    </html>
+<html>
+    <head>
+        <title>Login for sharkTank</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body{
+                width: 350px;
+                height: 100%;
+                margin: 0;
+                padding: 60px; 
+                padding-top:30px;
+                margin-top:5px;
+                margin:10px;
+                position:absolute;
+                background-image: url("../img/loginbg.jpg");
+                background-repeat:no-repeat;
+                background-size:cover;
+                
+            }
+            label{
+                color: rgb(0, 1, 3);
+            }
+            div{
+            position:absolute;
+            left:200px;
+            top:20px;
+            width: 400px;
+            
+            padding: 30px;
+            margin: 20px;
+            } .container{
+            width:100%;
+            border:3px solid rgb(0, 0, 0);
+            padding:15px;
+            }
+            .signup{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            position:absolute;
+            left:300px;
+            top:10px;
+            width: 400px;
+            padding: 50px;
+            margin: 20px;
+            }input[type=text], input[type=password], input[type=tel], input[type=email] {
+            width:90%;
+            padding: 15px;
+            margin: 5px 0px 22px 0px;
+            display: inline-block;
+            border: none;
+            background: #0e0000;
+            }
+            button,a{
+            background-color:rgb(77, 132, 235);
+            padding:10px;
+            border-style: outset;
+            position:relative;
+            }
+        </style>
+    </head>
+<body>
+
+<div class="login" >
+  <form id="login" method="post">
+    <h1 style="color: rgb(0, 3, 6);">Login</h1>
+    <div class="container">
+        
+      <label for="number"><b>Please Enter No of Players</b></label>
+      <input type="number" placeholder="1" id="number" name="number" required><br>
+
+      <label for="name"><b>Password</b></label>
+      <input type="Enter Player Name" placeholder="Enter Name" id="name" name="name" required><br>
+      
+      <button type="submit" class="signupbtn">Submit</button>
+     
+  </form>
+      
+      <p>
+          <a style="color: rgb(0, 0, 0);" href="http://localhost:8000/signup">Sign up</a>
+      </p>
+      <br><br>
+      
+  </div>
+</div>
+
+</body>
+
+</html>
